@@ -1,0 +1,490 @@
+main {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card {
+    padding: 2rem 2.5rem 2.5rem 2rem;
+    margin: 2rem;
+}
+
+.container {
+    margin: 0 0 0 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container .row {
+    margin-left: 3.25rem;
+    margin-right: 7.25rem;
+}
+
+/* HEADER/SEARCH STYLING START */
+.row.section {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding-left: 3rem;
+    background-image: linear-gradient(to right, #021572, #ffffff);
+}
+
+.row .col.s7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header h1 {
+    font-size: 4rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+.btn {
+    background-color: #ffffff;
+    border-radius: 7px;
+    color: #1e1f1f;
+}
+
+.btn:hover {
+    background-color: #021572;
+    color: #ffffff;
+}
+
+.btn:focus {
+    background-color: #ffffff;
+    color: #1e1f1f;
+}
+
+.row .col.s12 {
+    width: 100%;
+    display: inline-block;
+}
+
+input[type=search]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #ffffff;
+    -webkit-box-shadow: 0 1px 0 0 #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#searchForm.row.section {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 15rem;
+}
+
+#searchForm {
+    padding-left: 0;
+}
+
+.form-control.col.s4.m2 {
+    width: 20rem;
+}
+
+.col.s3.btn {
+    width: 35%;
+}
+
+#previousSearches {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button.col.s12.m3.btn {
+    margin: 4px;
+}
+
+/*  HEADER/SEARCH STYLING END */
+
+/* JOB CARD STYLING START */
+.parent {
+    display: inline-block;
+}
+
+/* COIN DESCRIPTION CARD */
+#coinDataContainer {
+    padding: 30px;
+    width: 95%;
+}
+
+.card.cr.col.s5.hoverable {
+    margin-right: 10px;
+}
+
+#coinHomepage.btn-floating.pulse::before {
+    background-color: rgba(2, 21, 39, 0.5);
+    top: -1px;
+    left: 3px;
+}
+
+#coinHomepage.btn-floating.pulse {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.icons-btn {
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.icons-btn:focus {
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+#coinPrice {
+    color: green;
+}
+
+.row .col.s12 #plubms {
+    width: 55%;
+}
+
+/* TWITTER CARD STYLING */
+.row {
+
+    margin: 0 auto;
+}
+
+.tweetsTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.card-image {
+    width: 5%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-image img {
+    margin-right: 25px;
+}
+
+#plumbs.col.s12.m6 {
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*#tweetInfo.s12.m4.l4 {
+    width: 50%;
+
+}
+
+#tweetContainer.row {
+display: inline-block;
+    
+}*/
+
+.card-content.row {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.child {
+    display: inline-block;
+} */
+/* footer */
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right, #021572, #ffffff);
+    color: white;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+#btn1:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+#btn2:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+#btn3:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+
+/* JOB CARD STYLING END */
+/* @media screen and (max-width: 1980px) {
+    .cr {
+        flex-basis: 10%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .cr {
+        flex-basis: 14.2%;
+    }
+} */
+
+@media screen and (max-width: 1300px) {
+    .cr {
+        flex-basis: 20%;
+    }
+
+    .col.s3 h1 {
+        font-size: 4rem;
+        margin-left: -25px;
+        margin-top: 45px;
+    }
+
+    .container {
+        margin: 1px 1px 1px 185px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #searchForm.row.section {
+        height: -3rem;
+        margin-left: -55px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .form-control.col.s4.m2 {
+        border: solid 1px #021572;
+        width: 10rem;
+        height: 2rem;
+        background-color: #ffffff;
+        margin-bottom: 1rem;
+        margin: -4rem;
+    }
+
+    #mySearchButton {
+        width: 7rem;
+        font-size: .75rem;
+        margin-left: -6.5rem;
+        margin-top: 5.75rem;
+    }
+
+    button.col.s12.m3.btn {
+        width: 100%;
+        font-size: .75rem;
+        padding: 0 30px;
+    }
+
+    #previousSearches {
+        margin-left: -7rem;
+        margin-right: 13rem;
+    }
+
+    .parent {
+        margin: -2rem;
+    }
+
+    #coinDataContainer {
+        padding: 2rem;
+        width: 95%;
+        margin: 1.5rem;
+    }
+
+    #tweetContainer {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .card-image h4 {
+        font-size: 2rem;
+    }
+
+    .card-stacked.block {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cr {
+        flex-basis: 33.3%;
+    }
+
+    .col.s3 h1 {
+        font-size: 3rem;
+        margin-left: -16px;
+    }
+
+    .container {
+        margin: 1px 1px 1px 1px;
+    }
+
+
+    #searchForm.row.section {
+        height: 3rem;
+        margin-left: 60px;
+    }
+
+    .form-control.col.s4.m2 {
+        border: solid 1px #021572;
+        width: 150%;
+        height: 2rem;
+        background-color: #ffffff;
+        margin-bottom: 1rem;
+        margin: 11px;
+        margin-left: 2rem;
+        padding: 13px;
+    }
+
+    #mySearchButton {
+        width: 100%;
+        font-size: .75rem;
+    }
+
+    button.col.s12.m3.btn {
+        width: 100%;
+        font-size: .75rem;
+    }
+
+    .parent {
+        margin: -2rem;
+    }
+
+    #coinDataContainer {
+        padding: 2rem;
+        width: 75%;
+    }
+
+    #tweetContainer {
+        width: 95%;
+        margin: 0rem;
+    }
+
+    .card-image img {
+        visibility: hidden;
+    }
+
+    .card-image h4 {
+        font-size: 2rem;
+    }
+
+    .card-stacked.block {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .cr {
+        flex-basis: 50%;
+    }
+
+    .col.s3 h1 {
+        font-size: 2rem;
+        margin-left: 15px;
+        margin-top: -3rem;
+    }
+
+    .container {
+        margin: 1px 1px 1px 1px;
+    }
+
+    #searchForm.row.section {
+        height: 3rem;
+        margin-left: -5px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .row.section {
+        justify-content: space-around;
+    }
+
+    .form-control.col.s4.m2 {
+        border: solid 1px #021572;
+        width: 150%;
+        height: 10px;
+        background-color: #ffffff;
+        margin-bottom: -1rem;
+        padding-right: 60px;
+    }
+
+    #mySearchButton {
+        width: 100%;
+        font-size: .75rem;
+        margin: 0rem;
+    }
+
+    button.col.s12.m3.btn {
+        width: 100%;
+        font-size: .75rem;
+    }
+
+    #previousSearches {
+        margin-left: -12rem;
+        margin-right: 13rem;
+    }
+
+    .parent {
+        margin: -2rem;
+    }
+
+    #coinDataContainer {
+        padding: 2rem;
+        width: 75%;
+    }
+
+    #tweetContainer {
+        width: 95%;
+        margin: 0rem;
+    }
+
+    .card-image img {
+        visibility: hidden;
+    }
+
+    .card-image h4 {
+        font-size: 2rem;
+    }
+
+    .card-stacked.block {
+        font-size: 1rem;
+    }
+
+}
